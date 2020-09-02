@@ -32,22 +32,22 @@
                     <p class="subtitle">Using the COD services to download adminstration areas of a country with their pcodes</p>
                     <p>1) Select a country</p>
                     <p>2) Country sent to COD services</p>
-                    <p>3) Receives admin names to populate menu</p>
+                    <p>3) Receives admin names to populate the second drop down menu</p>
                     <div class="row section">
                         <div class="col-md-4">
                             <p>Pick a country</p>
-                            <select>
+                            <select id="demo1countrypicker">
                                 <option>Pick a country</option>
-                                <option>Burkina Faso</option>
+                                <option value="BF">Burkina Faso</option>
                             </select>
                         </div>
                         <div class="col-md-4">
                             <p>Admin 1 names</p>
-                            <select>
+                            <select id="demo1adminpicker">
                                 <option>Pick an Admin area</option>
                             </select>
                         </div>
-                        <div class="col-md-4">
+                        <div id="demo1value" class="col-md-4">
                         </div>                    
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                     <p>2) Send the lat/long data of each row to the COD services</p>
                     <p>3) Receives admin names and codes and append to the data set</p>
                     <h3>Kobo Data</h3>
-                    <button class="btn btn-primary">Get admin boundaries</button>
+                    <button id="pcodedata" class="btn btn-primary">Get admin boundaries</button>
                     <div id="demo2data">
                     </div>
                 </div>
@@ -68,17 +68,20 @@
             <div class="row">
                 <div class="col-md-12 demorow">
                     <h1>Live Demo 3</h1>
-                    <p class="subtitle">Combining a data set with the COD tile service to produce a map</p>
+                    <p class="subtitle">Combining a HDX data set with the COD tile service to produce a map</p>
+                    <p>1) Download and aggregate 3W presence data for HDX (via HXL Proxy)</p>
+                    <p>2) Download corresponding Tile map from COD services</p>
+                    <p>3) Combine the two data sets and produce a map</p>
+                     <p class="subtitle">Map of number of organisation per admin area</p>
+                    <div id="map4"></div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 demorow">
                     <h1>Live Demo 4</h1>
-                    <p class="subtitle">Combining a HDX data set with the COD tile service to produce a map</p>
-                    <p>1) Download and aggregate 3W presence data for HDX (via HXL Proxy)</p>
-                    <p>2) Download corresponding Tile map from COD services</p>
-                    <p>3) Combine the two data sets and produce a map</p>
-                    <div id="map4"></div>
+                    <p class="subtitle">Combining a user data set with the COD tile service to produce a map</p>
+                    <p>URL to user file: <input id="userfile" size="100"> <button id="loaddata3" class="btn btn-primary">Load Data</button></p>
+                    <div id="map3"></div>
                 </div>
             </div>
         </div>
