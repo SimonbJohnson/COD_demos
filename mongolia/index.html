@@ -39,7 +39,7 @@
                             <p>Pick a country</p>
                             <select id="demo1countrypicker">
                                 <option>Pick a country</option>
-                                <option value="BF">Burkina Faso</option>
+                                <option value="MN">Mongolia</option>
                             </select>
                         </div>
                         <div class="col-md-4">
@@ -60,7 +60,7 @@
                     <p>1) Take Kobo Data</p>
                     <p>2) Send the lat/long data of each row to the COD services</p>
                     <p>3) Receives admin names and codes and append to the data set</p>
-                    <pre><code><a href="https://beta.itos.uga.edu/CODV2API/api/v1/Themes/cod-ab/Lookup/latlng?latlong=-2.33,12.34&wkid=4326&level=3">https://beta.itos.uga.edu/CODV2API/api/v1/Themes/cod-ab/Lookup/latlng?latlong={{ lat }},{{ lon }}&wkid=4326&level=3</a></code></pre>
+                    <pre><code><a href="https://beta.itos.uga.edu/CODV2API/api/v1/Themes/cod-ab/Lookup/latlng?latlong=-2.33,12.34&wkid=4326&level=3">https://beta.itos.uga.edu/CODV2API/api/v1/Themes/cod-ab/Lookup/latlng?latlong={{ lat }},{{ lon }}&wkid=4326&level=2</a></code></pre>
                     <h3>Kobo Data</h3>
                     <button id="pcodedata" class="btn btn-primary">Get admin boundaries</button>
                     <div id="demo2data">
@@ -70,20 +70,8 @@
             <div class="row">
                 <div class="col-md-12 demorow">
                     <h1>Live Demo 3</h1>
-                    <p class="subtitle">Combining a HDX data set with the COD tile service to produce a map</p>
-                    <p>1) Download and aggregate 3W presence data for HDX (via HXL Proxy)</p>
-                    <p>2) Download corresponding Tile map from COD services</p>
-                    <p>3) Combine the two data sets and produce a map</p>
-                    <pre><code>https://itos-humanitarian.s3.amazonaws.com/v1/VectorTile/COD_BFA/Admin2/{z}/{y}/{x}.pbf</code></pre>
-                     <p class="subtitle">Map of number of organisation per admin area</p>
-                    <div id="map4"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 demorow">
-                    <h1>Live Demo 4</h1>
                     <p class="subtitle">Combining a user data set with the COD tile service to produce a map</p>
-                    <p>Example Data: <a href="https://docs.google.com/spreadsheets/d/1ZRWV4XcJzzQ991dfSCpQ9FvdHqAuo4X0nwtZAVWEkas/edit#gid=0">https://docs.google.com/spreadsheets/d/1ZRWV4XcJzzQ991dfSCpQ9FvdHqAuo4X0nwtZAVWEkas/edit#gid=0</a></p>
+                    <p>Example Data: <a href="https://docs.google.com/spreadsheets/d/1MuB1CH6q5F_pJ1NEhDL9934ZK5S0xndVYNjeJa5uIxw/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1MuB1CH6q5F_pJ1NEhDL9934ZK5S0xndVYNjeJa5uIxw/edit?usp=sharing</a></p>
                     <p>URL to user file: <input id="userfile" size="100"> <button id="loaddata3" class="btn btn-primary">Load Data</button></p>
                     <div id="map3"></div>
                 </div>
