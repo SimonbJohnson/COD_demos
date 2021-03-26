@@ -171,7 +171,7 @@ function mapcreate3(data){
 	}).addTo(map3);
 
 	console.log(data)
-	var mapTiles = L.vectorGrid.protobuf("http://beta.itos.uga.edu/CODV2API/api/v1/Themes/cod-ab/locations/MNG/versions/current/1/{z}/{x}/{y}.pbf", {
+	var mapTiles = L.vectorGrid.protobuf("https://beta.itos.uga.edu/CODV2API/api/v1/Themes/cod-ab/locations/MNG/versions/current/1/{z}/{x}/{y}.pbf", {
 		vectorTileLayerStyles: {
 			    'PROJ_LIB':function(properties) {
 			    	console.log(properties);
