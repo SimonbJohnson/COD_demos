@@ -72,7 +72,7 @@ function createTableFromHXL(id,data,limit=false){
 function initDemo1(){
 	$('#demo1countrypicker').on('change',function(d){
 		let country = $('#demo1countrypicker').val();
-		let url = 'https://beta.itos.uga.edu/CODV2API/api/v1/Themes/cod-ab/Lookup/Get?level=1&countryPCode='+country;
+		let url = 'https://beta.itos.uga.edu/CODV2API/api/v1/Themes/cod-ab/Lookup/Get?level=1&iso2='+country;
 		$.ajax({ 
 		    type: 'GET', 
 		    url: url, 
